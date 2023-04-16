@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Pierre-Feuille-Ciseaux</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <body>
+      <div class="card text-center">
+        <div class="card-body">
+          <h1 class="card-title">Petit jeu contre l'ordinateur</h1>
+          <div class="container">
+            <div class="form-group">
+              <label for="userChoice">Votre choix :</label>
+              <select class="form-control" id="userChoice">
+                <option value="pierre">Pierre</option>
+                <option value="feuille">Feuille</option>
+                <option value="ciseaux">Ciseaux</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" onclick="play()">Jouer</button>
+            <div id="countdown"></div>
+            <div id="result"></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <h3>Votre score: <span id="userScore">0</span></h3>
+            </div>
+            <div class="col">
+              <h3>Score de l'ordinateur: <span id="computerScore">0</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>
